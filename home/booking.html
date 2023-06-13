@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="booking.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <title>Movie Seat Booking</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">
+          <i class='bx bxs-movie' ></i>Cinema Village
+      </a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+      <ul class="navbar">
+          <li><a href="index.html" class="home-active">Home</a></li>
+          <li><a href="index.html">Movies</a></li>
+      </ul>
+      <a href="login.html" class="btn">Sign In</a>
+  </header>
+  <div class="location-container">
+    <label>Wybierz miasto:</label>
+    <select id="city">
+      <option >Gliwice</option>
+      <option >Białystok</option>
+      <option >Pehapowice</option>
+    </select>
+  </div>
+    <div class="movie-container">
+      <label>Wybierz film:</label>
+      <select id="movie">
+        <option value="10">Spider-Man: No Way Home ($10)</option>
+        <option value="12">Dr.Strange ($12)</option>
+        <option value="8">John Wick 2 ($8)</option>
+        <option value="9">Aquaman ($9)</option>
+        <option value="12">Black Panther ($12)</option>
+        <option value="11">Uncharted ($11)</option>
+      </select>
+    </div>
+    <div class="time-container">
+    <button class="time">11:40</button>
+    <button class="time">14:20</button>
+    <button class="time">16:10</button>
+    </div>
+
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <small>N/A</small>
+      </li>
+
+      <li>
+        <div class="seat selected"></div>
+        <small>Selected</small>
+      </li>
+
+      <li>
+        <div class="seat occupied"></div>
+        <small>Occupied</small>
+      </li>
+    </ul>
+
+    <div class="container">
+      <div class="screen"></div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+      </div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+      </div>
+    </div>
+
+    <p class="text">
+      You have selected <span id="count">0</span> seats for a price of $<span id="total">0</span>
+    </p>
+
+    <a href="summary.html" class="btn summary">go to summary</a>
+    
+    <div class="copyright">
+      <p>&#169;Cinema Village  ALl Right Reserved</p>
+   </div>
+    <script src="script.js"></script>
+  </body>
+</html>
